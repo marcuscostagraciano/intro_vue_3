@@ -22,7 +22,7 @@ const app = Vue.createApp({
 
         // Coding Challenge
         removeFromCart() {
-            this.cart -= 1
+            if (this.cart > 0) {this.cart -= 1}
         }
     }
 })
